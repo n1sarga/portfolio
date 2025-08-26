@@ -4,102 +4,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Nisarga Mridha">
-  <title>Nisarga's Portfolio</title>
-  <link rel="icon" href="./assets/favicon.ico">
+  <title>Nisarga Mridha Portfolio</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Nisarga Mridha</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <h1 class="logo">Nisarga Mridha</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Hello, I'm Nisarga Mridha</h1>
+        <p>Computer Science Graduate | Data Science | Software Engineering | AI Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/images/profile.jpg" alt="Nisarga Mridha">
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <div class="profile">
-      <img src="./assets/images/profile.jpg" alt="Nisarga Mridha">
-      <p>Computer Science graduate interested in software engineering and data science. Passionate about Web, Python, and AI.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Computer Science graduate interested in software engineering and data science. Actively pursuing research-focused work and projects, building expertise in Web Technologies, Python, and Artificial Intelligence. Passionate about contributing to innovative solutions in the technology sector.</p>
+      <p>Email: <a href="mailto:nisargapersonal@gmail.com">nisargapersonal@gmail.com</a> | Phone: +880**********</p>
       <p>
-        <a href="https://github.com/n1sarga" target="_blank">Github</a> | 
+        <a href="https://github.com/n1sarga" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/n1sarga/" target="_blank">LinkedIn</a>
       </p>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>B.Sc in CSE</strong> - East West University (2020-2025), CGPA: *.**/4.00
-      </li>
-      <li>
-        <strong>HSC in Science</strong> - Dhaka Imperial College (2016-2018), GPA: *.**/5.00
-      </li>
-      <li>
-        <strong>SSC in Science</strong> - Khilgaon Govt. High School (2014-2016), GPA: *.**/5.00
-      </li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>NimbleScribe:</strong> Responsive blog website. 
-        <a href="https://nimblescribe.netlify.app" target="_blank">Live</a> | 
-        <a href="https://github.com/n1sarga" target="_blank">Code</a>
-      </li>
-      <li>
-        <strong>Brain Tumor Classification:</strong> CNN on MRI scans. 
-        <a href="https://github.com/n1sarga/Brain_Tumor_Classification" target="_blank">Code</a>
-      </li>
-      <li>
-        <strong>Book Recommender System:</strong> Collaborative filtering with k-NN. 
-        <a href="https://github.com/n1sarga/Book_Recommender_System_KNN" target="_blank">Code</a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">
-        <span>C/C++</span>
-        <div class="skill-bar"><div class="skill-fill" data-level="85%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Python</span>
-        <div class="skill-bar"><div class="skill-fill" data-level="88%"></div></div>
-      </div>
-      <div class="skill">
-        <span>HTML/CSS/JS</span>
-        <div class="skill-bar"><div class="skill-fill" data-level="90%"></div></div>
-      </div>
-      <div class="skill">
-        <span>TensorFlow/Keras</span>
-        <div class="skill-bar"><div class="skill-fill" data-level="70%"></div></div>
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>BSc in Computer Science & Engineering</h3>
+          <p>East West University (2020 - 2025)</p>
+          <p>CGPA: *.**/4.00</p>
+          <p>Major: Data Science | Non Major: Software Engineering</p>
+          <p>Thesis: "Comprehensive Evaluation of Feature Extraction Techniques for Predicting Self-Interacting Proteins Using Rotation Forest Model".</p>
+        </div>
+        <div class="card">
+          <h3>Higher Secondary Certificate in Science</h3>
+          <p>Dhaka Imperial College (2016 - 2018)</p>
+          <p>GPA: *.**/5.00</p>
+        </div>
+        <div class="card">
+          <h3>Secondary School Certificate in Science</h3>
+          <p>Khilgaon Govt. High School (2014 - 2016)</p>
+          <p>GPA: *.**/5.00</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" action="mailto:nisargapersonal@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Email</button>
-    </form>
+  <!-- Research Section -->
+  <section id="research" class="section section-light">
+    <div class="container">
+      <h2>Research Experience</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>CSE407 - Green Computing</h3>
+          <p>Analysed regression models on Retail Supply Chain data for demand forecasting with explainable AI (LIME).</p>
+          <p>Accepted on ICDMIS 2025</p>
+        </div>
+        <div class="card">
+          <h3>CSE438 - Digital Image Processing</h3>
+          <p>Multi-Class Brain Tumour Classification with CNN on MRI Scans. Published in <a href="https://doi.org/10.1109/SPICSCON64195.2024.10941675" target="_blank">IEEE Xplore</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Supershop Management System (C)</h3>
+          <p>CLI-based inventory system with CRUD operations.</p>
+          <a href="https://github.com/n1sarga/Structured_Programming" target="_blank">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Basic GUI Application (Java Swing)</h3>
+          <p>Interactive GUI application with page navigation.</p>
+          <a href="https://github.com/n1sarga/Object_Oriented_Programming" target="_blank">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>FIFA World Cup 2022 DB (Oracle Apex)</h3>
+          <p>Relational database managing teams, players, and match statistics.</p>
+          <a href="https://github.com/n1sarga/DBMS" target="_blank">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>NimbleScribe Blog Website</h3>
+          <p>Responsive blog website with CRUD operations.</p>
+          <a href="https://nimblescribe.netlify.app" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>C/C++, JAVA, Python, MATLAB</li>
+        <li>Flask, FastAPI, Postman</li>
+        <li>HTML, CSS, Javascript</li>
+        <li>MySQL, Oracle Apex, PL/SQL</li>
+        <li>Pandas, Numpy, Matplotlib, Scikit-learn, Tensorflow, Keras, Hadoop, Spark</li>
+        <li>Github, Netlify, Streamlit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="certs-list">
+        <li>Victory Day In House Programming Battle 2021 - <a href="https://drive.google.com/file/d/194q5xgXZw41jWQR9yWxLtsPdBbEtBvHN/view?usp=drive_link" target="_blank">Certificate</a></li>
+        <li>International Conference on Signal Processing, Information, Communication and Systems 2024 - <a href="https://drive.google.com/file/d/1tAA8lvVuDRDwRyvnxGyb-hZ48iXSs7U3/view?usp=sharing" target="_blank">Certificate</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section id="references" class="section section-light">
+    <div class="container">
+      <h2>References</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Dr. Shamim H Ripon</h3>
+          <p>Professor, Department of CSE, East West University</p>
+          <p>Email: <a href="mailto:dshr@ewubd.edu">dshr@ewubd.edu</a></p>
+        </div>
+        <div class="card">
+          <h3>Dr. Ahmed Wasif Reza</h3>
+          <p>Professor, Department of CSE, East West University</p>
+          <p>Email: <a href="mailto:wasif@ewubd.edu">wasif@ewubd.edu</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Nisarga Mridha</p>
+    <p>&copy; 2025 Nisarga Mridha. All rights reserved.</p>
   </footer>
 
   <script src="./js/main.js"></script>
