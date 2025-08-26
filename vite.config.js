@@ -1,7 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/nisarga-portfolio/" // <-- change if repo name is different
+  base: '/portfolio/', // set this to your GitHub repo name if deploying to GitHub Pages
 });
