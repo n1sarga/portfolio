@@ -9,29 +9,27 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <div class="container nav-container">
-        <h1 class="logo">Nisarga Mridha</h1>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#references">References</a></li>
-        </ul>
-        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-      </div>
-    </nav>
-  </header>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h1 class="logo">Nisarga Mridha</h1>
+    <ul class="sidebar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+  </aside>
 
-  <!-- Hero Section -->
-  <section class="hero hero-theme">
-    <div class="hero-overlay"></div>
-    <div class="container hero-container">
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
       <div class="hero-text">
         <h1>Hello, I'm Nisarga Mridha</h1>
         <p>Computer Science Graduate | Data Science | Software Engineering | AI Enthusiast</p>
@@ -40,139 +38,84 @@
       <div class="hero-img">
         <img src="./assets/images/avatar.png" alt="Nisarga Mridha">
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section section-theme">
-    <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
       <h2>About Me</h2>
-      <p>Computer Science graduate interested in software engineering and data science. Actively pursuing research-focused work and projects, building expertise in Web Technologies, Python, and Artificial Intelligence. Passionate about contributing to innovative solutions in the technology sector.</p>
+      <p>Computer Science graduate interested in software engineering and data science. Actively pursuing research-focused work and projects...</p>
       <p>Email: <a href="mailto:nisargapersonal@gmail.com">nisargapersonal@gmail.com</a> | Phone: +880**********</p>
       <p>
         <a href="https://github.com/n1sarga" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/n1sarga/" target="_blank">LinkedIn</a>
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="section section-alt">
-    <div class="container">
+    <!-- Education Section -->
+    <section id="education" class="section fade-in">
       <h2>Education</h2>
       <div class="cards">
         <div class="card">
           <h3>BSc in Computer Science & Engineering</h3>
-          <p>East West University (2020 - 2025)</p>
-          <p>CGPA: *.**/4.00</p>
+          <p>East West University (2020 - 2025) | CGPA: *.**/4.00</p>
           <p>Major: Data Science | Non Major: Software Engineering</p>
-          <p>Thesis: "Comprehensive Evaluation of Feature Extraction Techniques for Predicting Self-Interacting Proteins Using Rotation Forest Model".</p>
+          <p>Thesis: "Comprehensive Evaluation of Feature Extraction Techniques..."</p>
         </div>
         <div class="card">
-          <h3>Higher Secondary Certificate in Science</h3>
-          <p>Dhaka Imperial College (2016 - 2018)</p>
-          <p>GPA: *.**/5.00</p>
+          <h3>HSC in Science</h3>
+          <p>Dhaka Imperial College (2016 - 2018) | GPA: *.**/5.00</p>
         </div>
         <div class="card">
-          <h3>Secondary School Certificate in Science</h3>
-          <p>Khilgaon Govt. High School (2014 - 2016)</p>
-          <p>GPA: *.**/5.00</p>
+          <h3>SSC in Science</h3>
+          <p>Khilgaon Govt. High School (2014 - 2016) | GPA: *.**/5.00</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Research Section -->
-  <section id="research" class="section section-theme">
-    <div class="container">
-      <h2>Research Experience</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>CSE407 - Green Computing</h3>
-          <p>Analysed regression models on Retail Supply Chain data for demand forecasting with explainable AI (LIME).</p>
-          <p>Accepted on ICDMIS 2025</p>
-        </div>
-        <div class="card">
-          <h3>CSE438 - Digital Image Processing</h3>
-          <p>Multi-Class Brain Tumour Classification with CNN on MRI Scans. Published in <a href="https://doi.org/10.1109/SPICSCON64195.2024.10941675" target="_blank">IEEE Xplore</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Supershop Management System (C)</h3>
-          <p>CLI-based inventory system with CRUD operations.</p>
-          <a href="https://github.com/n1sarga/Structured_Programming" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Basic GUI Application (Java Swing)</h3>
-          <p>Interactive GUI application with page navigation.</p>
-          <a href="https://github.com/n1sarga/Object_Oriented_Programming" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>FIFA World Cup 2022 DB (Oracle Apex)</h3>
-          <p>Relational database managing teams, players, and match statistics.</p>
-          <a href="https://github.com/n1sarga/DBMS" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>NimbleScribe Blog Website</h3>
-          <p>Responsive blog website with CRUD operations.</p>
-          <a href="https://nimblescribe.netlify.app" target="_blank">Visit Website</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section section-theme">
-    <div class="container">
+    <!-- Skills Section with Progress Bars -->
+    <section id="skills" class="section fade-in">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card">C/C++, JAVA, Python, MATLAB</div>
-        <div class="skill-card">Flask, FastAPI, Postman</div>
-        <div class="skill-card">HTML, CSS, Javascript</div>
-        <div class="skill-card">MySQL, Oracle Apex, PL/SQL</div>
-        <div class="skill-card">Pandas, Numpy, Matplotlib, Scikit-learn, Tensorflow, Keras, Hadoop, Spark</div>
-        <div class="skill-card">Github, Netlify, Streamlit</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="section section-alt">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul class="certs-list">
-        <li>Victory Day In House Programming Battle 2021 - <a href="https://drive.google.com/file/d/194q5xgXZw41jWQR9yWxLtsPdBbEtBvHN/view?usp=drive_link" target="_blank">Certificate</a></li>
-        <li>International Conference on Signal Processing, Information, Communication and Systems 2024 - <a href="https://drive.google.com/file/d/1tAA8lvVuDRDwRyvnxGyb-hZ48iXSs7U3/view?usp=sharing" target="_blank">Certificate</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- References Section -->
-  <section id="references" class="section section-theme">
-    <div class="container">
-      <h2>References</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Dr. Shamim H Ripon</h3>
-          <p>Professor, Department of CSE, East West University</p>
-          <p>Email: <a href="mailto:dshr@ewubd.edu">dshr@ewubd.edu</a></p>
+        <div class="skill-card">
+          <h4>Python</h4>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
         </div>
-        <div class="card">
-          <h3>Dr. Ahmed Wasif Reza</h3>
-          <p>Professor, Department of CSE, East West University</p>
-          <p>Email: <a href="mailto:wasif@ewubd.edu">wasif@ewubd.edu</a></p>
+        <div class="skill-card">
+          <h4>Java</h4>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Data Science Tools</h4>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Web Development</h4>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Projects Section with Filter Tabs -->
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-target="all">All</button>
+        <button class="tab-btn" data-target="coding">Coding</button>
+        <button class="tab-btn" data-target="data-science">Data Science</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-type="coding">
+          <h3>Supershop Management System (C)</h3>
+          <a href="https://github.com/n1sarga/Structured_Programming" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card" data-type="data-science">
+          <h3>Salary Data Analysis</h3>
+          <a href="https://github.com/n1sarga/Data_Analytics" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2025 Nisarga Mridha. All rights reserved.</p>

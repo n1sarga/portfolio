@@ -1,14 +1,25 @@
-// Hamburger Menu
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+// Intersection Observer for fade-in
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.2 });
+faders.forEach(fader => observer.observe(fader));
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+// Projects Filter Tabs
+const tabButtons = document.querySelectorAll('.tab-btn');
+const projectCards = document.querySelectorAll('.project-card');
 
-// Smooth scrolling for links
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    if(navLinks.classList.contains('active')) navLinks.classList.remove('active');
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const target = btn.dataset.target;
+    projectCards.forEach(card => {
+      card.style.display = (target === 'all' || card.dataset.type === target) ? 'block' : 'none';
+    });
   });
 });
+
+// Theme Toggle
+const toggleBtn = document.querySelector('.theme-toggle');
+toggleBtn.addEventListener('click', () => document.body.classList.toggle('dark-mode'));
